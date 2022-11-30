@@ -1,10 +1,9 @@
-let options = {
-    // root: document.querySelector('body'),
-    rootMargin: '0px',
-    threshold: 0.5
-  }
-  
-  
+let options  =  {
+  // root: document.querySelector('body'),
+  rootMargin: '0px',
+  threshold: 0.5
+}
+
   
   let callback = (entries, observer) => {
     entries.forEach((entry) => {

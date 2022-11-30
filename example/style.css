@@ -1,0 +1,85 @@
+/* Basic page style resets */
+/*  change the way the box model works*/
+/* more info: https://css-tricks.com/box-sizing/  */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+/*    font-family: 'Fira Code', monospace; */
+
+/* style the main body, general rules for the overarching page go here! */
+body {
+  font-family: "Fira Code", monospace;
+  background-color: #d38dc1;
+  display:grid; 
+  grid-template-rows: repeat(20,1fr);
+  grid-template-columns: repeat(10,1fr);
+  height:500vh;
+  
+}
+
+
+
+img{
+  width:200px;
+}
+
+
+.first{
+  grid-row: 10/11;
+  grid-column: 5/6;
+  transition: 1s all ease;
+  opacity:0
+  
+}
+
+
+.second{
+  transition: 3s all ease;
+  grid-row: 15/16;
+  grid-column: 5/6;
+  transform:scale(0);
+
+
+}
+
+.third{
+  grid-row: 20/21;
+  grid-column: 5/6;
+}
+
+
+.fadeIn{
+  transition: 0.5s all ease;
+  opacity:1
+}
+
+
+.zoom{
+transition: 3s all ease;
+transform:scale(1);
+  
+}
+
+
+.spin{
+  animation: threesixty 3s linear;
+}
+
+
+
+@keyframes threesixty{
+  from{
+    transform: rotate(0deg)
+  }
+  to{
+    transform:rotate(360deg)
+  }
+}

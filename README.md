@@ -3,6 +3,8 @@
 #### A lightweight scrollytelling library for adding and removing classes
 scrollyclasser uses the intersection observer API to add and remove classes from elements when they enter / exit the viewport
 
+See a Demo project on 🎏 Glitch.com: 
+https://glitch.com/edit/#!/intersection-observer-starter-kit
 
 ## Adding scrollyclasser to your project
 Add scrollyclasser.js to the very bottom of your page just before the closing `</body>` tag
@@ -29,7 +31,7 @@ __using a CDN:__
     <p class="observe specialStyles"> I'm being watched!</p>
  ```
 
- ### Adding classes to the element when it comes into view
+ ### Adding classes to an element when it comes into view
 Add the data attribute `data-enter-add` followed by any class names you'd like to add when the element comes into view
 
 ```html
@@ -38,9 +40,8 @@ Add the data attribute `data-enter-add` followed by any class names you'd like t
 ```
 
 
- ### Removing classes to the element when it leaves view
-Add the data attribute `data-exit-remove` followed by any class names you'd like to remove when the element leaves view
-
+ ### Removing classes from an element when it leaves view
+Add the data attribute `data-exit-remove` followed by any class names you'd like to remove when the element leaves view. Optionally, you can choose to not specify this data attribute if you do not want to remove the classes.
 
  ```html
     <p class="observe specialStyles" data-enter-add="spin fadeIn"  data-exit-remove="spin fadeIn"> I'm being watched!</p>
