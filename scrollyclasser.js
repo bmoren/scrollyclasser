@@ -44,41 +44,41 @@ let options  =  {
     });
   };
 
-//       ScrollyCLASSES PLUS!!
+// //       ScrollyCLASSES PLUS!!
       
-      // enable targeting of other elements to add
-      if(entry.isIntersecting === true && entry.target.dataset.enterTarget ){
+//       // enable targeting of other elements to add
+//       if(entry.isIntersecting === true && entry.target.dataset.enterTarget ){
 
-        //should make this work with multiples in the future
-        let targetElements = document.getElementsByClassName(entry.target.dataset.enterTarget)
+//         //should make this work with multiples in the future
+//         let targetElements = document.getElementsByClassName(entry.target.dataset.enterTarget)
         
-        // console.log(targetElements)
+//         // console.log(targetElements)
         
-         //get all the classes in the data attribute and split them to an array
-          let classes = entry.target.dataset.targetAdd.split(" ")
+//          //get all the classes in the data attribute and split them to an array
+//           let classes = entry.target.dataset.targetAdd.split(" ")
         
-       for( const t of targetElements) {
+//        for( const t of targetElements) {
               
-              //add each one to the class list
-              classes.forEach((className) => {
-                  t.classList.add(className)
-              })
+//               //add each one to the class list
+//               classes.forEach((className) => {
+//                   t.classList.add(className)
+//               })
           
-        }
+//         }
 
-              //get all the classes in the data attribute and split them to an array
-              let removeClasses = entry.target.dataset.targetAdd.split(" ")
+//               //get all the classes in the data attribute and split them to an array
+//               let removeClasses = entry.target.dataset.targetAdd.split(" ")
         
-              for( const t of targetElements) {
+//               for( const t of targetElements) {
                      
-                     //add each one to the class list
-                     removeClasses.forEach((className) => {
-                         t.classList.add(className)
-                     })
+//                      //add each one to the class list
+//                      removeClasses.forEach((className) => {
+//                          t.classList.add(className)
+//                      })
                  
-               }
+//                }
            
-         }
+//          }
 
   
   
