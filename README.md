@@ -47,3 +47,18 @@ Add the data attribute `data-exit-remove` followed by any class names you'd like
     <p class="observe specialStyles" data-enter-add="spin fadeIn"  data-exit-remove="spin fadeIn"> I'm being watched!</p>
     <!-- adds the spin and fadeIn classes when the element comes into view & removes them when it leaves view -->
 ```
+## Targeting other elements on the page!
+You can also have classes added / removed from a target element when an observable element enters the page. This opens new opportunites for dynamics and expression!
+
+ ### Adding classes to a target to an element when it comes into view
+Add the data attribute `data-enter-target` to choose a target class of an element on the page you'd like to target
+Add the data attribute `data-target-add` to choose a class you'd like to add to the element that was targeted
+or
+Add the data attribute `data-target-remove` to choose a class you'd like to remove to the element that was targeted
+
+
+```html
+   <p class="observe specialStyles" data-enter-target="snow"  data-target-add="spin" > I'm being watched!</p>
+
+   <div class="snow"> </div>
+```
