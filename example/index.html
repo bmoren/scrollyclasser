@@ -14,11 +14,35 @@
 
   </head>
   <body>
+
+    <p class="giver observe" data-enter-target="mememe" data-target-add="red" >In View, Add class to the bottom!, try moving me around the page...</p>
    
     
-    <img class="observe first" data-enter-add="spin fadeIn" data-exit-remove="spin fadeIn" src="http://placekitten.com/200/200"> 
-    <img class="observe second" data-enter-add="zoom" data-exit-remove="zoom" src="http://placekitten.com/300/300"> 
-    <img class="observe third" data-enter-add="spin fadeIn" data-exit-remove="spin fadeIn" src="http://placekitten.com/400/400"> 
+    <img
+    class="first observe"
+    data-enter-add="fadeIn"
+    data-exit-remove="fadeIn"
+    src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Diga_del_Brasimone_1.jpg"
+  />
+
+  <img
+    class="second observe"
+    data-enter-add="zoom"
+
+    data-enter-target="mememe"
+    data-target-remove="red"
+
+    src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Lemgo_-_Mittelstra%C3%9Fe_84-86.jpg"
+  />
+
+  <img
+    class="third observe"
+    data-enter-add="spin"
+    data-exit-remove="spin"
+    src="https://upload.wikimedia.org/wikipedia/commons/6/60/Brundtland_Golfhotel_2.jpg"
+  /> 
+
+  <p class="mememe"> did the class get added?</p>
 
     <!--   Import the scrollyclasser Javascript Library   -->
     <script src="../scrollyclasser.js"></script>

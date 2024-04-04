@@ -51,13 +51,14 @@ img{
 }
 
 .third{
-  grid-row: 20/21;
+  grid-row: 19/20;
   grid-column: 5/6;
 }
 
 
 .fadeIn{
-  transition: 0.5s all ease;
+  transition: 1s all ease;
+  transition-delay: 0.25s;
   opacity:1
 }
 
@@ -71,6 +72,17 @@ transform:scale(1);
 
 .spin{
   animation: threesixty 3s linear;
+}
+
+
+.mememe{
+  grid-row: 20/21;
+  grid-column: 5/6;
+}
+
+
+.red{
+  color:red;
 }
 
 
